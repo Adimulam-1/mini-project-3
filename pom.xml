@@ -10,6 +10,7 @@
     <groupId>com.example</groupId>
     <artifactId>user-application</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>war</packaging>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>

@@ -80,7 +80,6 @@ pipeline {
                 subject: "Failure: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
                 body: "pipeline failure, check the console output."
                  )
-
           }
        }
-    }
+

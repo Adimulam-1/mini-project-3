@@ -1,0 +1,15 @@
+<settings>
+    <servers>
+       <server>
+            <id>Maven-Releases-1</id>
+            <username>admin></username>
+            <password>Adimulam@2213</password>
+       </server>
+   
+       <server>
+            <id>Maven-snapshorts-1</id>
+            <username>admin</username>
+            <password>Adimulam@2213</password>
+       </server>
+    </servers>
+</settings>

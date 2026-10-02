@@ -29,7 +29,7 @@
            </repository>
 
            <snapshotRepository>
-               <id>Maven-snapshorts-2</id>
+               <id>Maven-snapshots-2</id>
     	       <name>Maven-snapshorts</name>
                <url>http://15.206.151.253:8081/repository/Maven-snapshots-2</url>
            </snapshotRepository>

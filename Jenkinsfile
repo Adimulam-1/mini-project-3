@@ -5,7 +5,7 @@ pipeline {
       stages  {
           stage ('Checkout') {
            steps {
-             sh 'checkout SCM'
+            checkout scm
            }
         }
         
@@ -29,10 +29,12 @@ pipeline {
           }
         stage ('SonarQube Analysis') {
           steps {
-         echo 'Running SonarQube Analysis'
+             echo 'Running SonarQube Analysis'
+
              withCredentials([string(credentialsId: 'sonar-token', variable: 'SONAR_TOKEN')]) {
             sh '''
                mvn sonar:sonar \
+               -Dsonar.projectkey=user-application \
                -Dsonar.host.url=http://13.203.221.206:9000 \
                -Dsonar.token=$SONAR_TOKEN
               '''
@@ -64,4 +66,4 @@ pipeline {
              echo 'pipeline failure'
           }
        }
-    }
+

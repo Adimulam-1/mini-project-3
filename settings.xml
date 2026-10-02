@@ -1,13 +1,13 @@
 <settings>
     <servers>
        <server>
-            <id>Maven-Releases-1</id>
+            <id>Maven-Releases-2</id>
             <username>admin></username>
             <password>Adimulam@2213</password>
        </server>
    
        <server>
-            <id>Maven-snapshorts-1</id>
+            <id>Maven-snapshots-2</id>
             <username>admin</username>
             <password>Adimulam@2213</password>
        </server>

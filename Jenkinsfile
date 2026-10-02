@@ -64,10 +64,23 @@ pipeline {
        post {
           success {
               echo 'pipeline completed successfully'
+              
+                emailext (
+                to: 'adimulamsai01@gmail.com',
+                subject: "Success: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                body: "pipeline completed successfully".
+                 )   
                }
              
          failure {
              echo 'pipeline failure'
+
+            emailext (
+                to: 'adimulamsai01@gmail.com',
+                subject: "Failure: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
+                body: "pipeline failure, check the console output."
+                 )
+
           }
        }
     }

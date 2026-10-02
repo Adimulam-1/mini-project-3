@@ -68,7 +68,7 @@ pipeline {
                 emailext (
                 to: 'adimulamsai01@gmail.com',
                 subject: "Success: ${env.JOB_NAME} #${env.BUILD_NUMBER}",
-                body: "pipeline completed successfully".
+                body: "pipeline completed successfully."
                  )   
                }
              
@@ -82,4 +82,4 @@ pipeline {
                  )
           }
        }
-
+    }

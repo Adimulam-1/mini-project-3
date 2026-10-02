@@ -61,9 +61,9 @@ pipeline {
           success {
               echo 'pipeline completed successfully'
                }
-             }
+             
          failure {
              echo 'pipeline failure'
           }
        }
-
+    }

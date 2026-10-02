@@ -56,7 +56,7 @@ pipeline {
             echo 'Deploying Application to Tomcat.....'
             
               sh '''
-                 cp target/*.war /opt/tomcat/webapps
+                 cp target/user-application-1.0-SNAPSHOT.war /var/lib/tomcat10/webapps/
               '''
                 }
              }
